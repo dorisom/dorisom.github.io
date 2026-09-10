@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>妖狐之惑-魅影妖狐传说与东方奇幻文化探秘</title>
+    <meta name="description" content="妖狐之惑，探索东方妖狐传说的魅力世界。从九尾狐到灵狐文化，解析妖狐形象演变、影视动漫作品、经典故事与二次元创作，带你走进亦正亦邪的狐妖秘境。">
+    <meta name="keywords" content="妖狐之惑,妖狐,九尾狐,狐妖传说,灵狐文化,狐妖动漫,东方奇幻,妖狐电影,狐仙故事,狐妖游戏">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+            background: #0d0b14;
+            color: #e8e2f0;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* 头部 */
+        .site-header {
+            background: linear-gradient(135deg, #1a0f1f 0%, #2a1620 50%, #151022 100%);
+            border-bottom: 1px solid rgba(210, 160, 100, 0.2);
+            padding: 18px 0;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(6px);
+            background-color: rgba(13, 11, 20, 0.85);
+        }
+        .header-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            background: radial-gradient(circle, #f5c16c, #b85f2a);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            box-shadow: 0 0 18px rgba(230, 150, 70, 0.5);
+        }
+        .site-name {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            background: linear-gradient(90deg, #f6d9a0, #eaa05a, #d47a3a);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 20px rgba(220, 130, 60, 0.2);
+            white-space: nowrap;
+        }
+        .site-tagline {
+            font-size: 13px;
+            color: #bb9ecc;
+            letter-spacing: 2px;
+            border-left: 1px solid rgba(200, 170, 220, 0.3);
+            padding-left: 14px;
+            margin-left: 6px;
+            display: none;
+        }
+        @media (min-width: 640px) {
+            .site-tagline { display: block; }
+        }
+        .main-nav ul {
+            display: flex;
+            gap: 8px;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        .main-nav a {
+            display: block;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 15px;
+            color: #d9c2ea;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+        .main-nav a:hover, .main-nav .active a {
+            background: rgba(220, 140, 70, 0.15);
+            border-color: #c98b4a;
+            color: #f6d9a0;
+        }
+        /* 首屏 Hero */
+        .hero {
+            background: radial-gradient(ellipse at 20% 20%, #352038 0%, #1c1025 60%, #0c0814 100%);
+            padding: 80px 0 70px;
+            border-bottom: 1px solid rgba(190, 130, 80, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: -30%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(235, 160, 90, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero .container {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        @media (min-width: 900px) {
+            .hero .container {
+                grid-template-columns: 1.4fr 1fr;
+                align-items: center;
+            }
+        }
+        .hero-copy h1 {
+            font-size: 46px;
+            line-height: 1.2;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fae7c0, #f3b77a, #cb7a45);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 3px;
+            margin-bottom: 16px;
+            text-shadow: 0 0 30px rgba(230, 140, 70, 0.15);
+        }
+        .hero-copy h1 span {
+            color: #bcd0eb;
+            -webkit-text-fill-color: #bcd0eb;
+        }
+        .hero-desc {
+            font-size: 17px;
+            color: #c9b6d8;
+            max-width: 600px;
+            margin-bottom: 24px;
+            border-left: 3px solid #d1904a;
+            padding-left: 18px;
+        }
+        .hero-tags {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .tag {
+            background: rgba(180, 130, 80, 0.15);
+            border: 1px solid rgba(210, 150, 90, 0.3);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 14px;
+            color: #eac393;
+        }
+        .hero-visual {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 20px;
+            padding: 30px 20px;
+            border: 1px solid rgba(220, 170, 120, 0.2);
+            backdrop-filter: blur(4px);
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+        }
+        .hero-visual .fox-emblem {
+            font-size: 90px;
+            line-height: 1;
+            filter: drop-shadow(0 0 25px rgba(240, 150, 70, 0.3));
+            margin-bottom: 15px;
+        }
+        .hero-visual h3 {
+            font-size: 22px;
+            color: #f0d2a0;
+            margin-bottom: 8px;
+            letter-spacing: 2px;
+        }
+        .hero-visual p {
+            color: #b8a5c2;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        .btn-group {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #d19a52, #b56a2d);
+            color: #fff;
+            padding: 10px 28px;
+            border-radius: 40px;
+            font-weight: 600;
+            border: none;
+            box-shadow: 0 4px 15px rgba(180, 100, 40, 0.3);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(180, 100, 40, 0.4);
+        }
+        .btn-outline {
+            padding: 10px 28px;
+            border-radius: 40px;
+            border: 1px solid rgba(210, 160, 100, 0.5);
+            color: #e0c8a0;
+            transition: all 0.3s;
+            background: transparent;
+        }
+        .btn-outline:hover {
+            background: rgba(200, 140, 80, 0.1);
+            border-color: #d5a05a;
+        }
+        /* 内容区块通用 */
+        .section {
+            padding: 60px 0;
+        }
+        .section-alt {
+            background: linear-gradient(180deg, #0d0b14 0%, #151020 100%);
+        }
+        .section-head {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-eyebrow {
+            color: #c98b4a;
+            letter-spacing: 4px;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+        .section-head h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #e9d6f0;
+            letter-spacing: 2px;
+        }
+        .section-head p {
+            color: #a892b4;
+            max-width: 600px;
+            margin: 10px auto 0;
+        }
+        /* 传说起源 */
+        .legend-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        @media (min-width: 768px) {
+            .legend-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .legend-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 28px 22px;
+            border: 1px solid rgba(200, 160, 110, 0.15);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .legend-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(220, 150, 80, 0.4);
+        }
+        .legend-icon {
+            font-size: 40px;
+            margin-bottom: 14px;
+        }
+        .legend-card h3 {
+            font-size: 20px;
+            color: #eac393;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        .legend-card p {
+            color: #b3a0bd;
+            font-size: 15px;
+        }
+        /* 作品展示 */
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 24px;
+        }
+        .work-item {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid rgba(180, 140, 100, 0.12);
+            transition: all 0.3s;
+        }
+        .work-item:hover {
+            border-color: #c98b4a;
+            transform: scale(1.02);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+        .work-cover {
+            height: 150px;
+            background: linear-gradient(135deg, #352038, #4a2530, #2d1a2e);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 52px;
+            position: relative;
+        }
+        .work-cover::after {
+            content: "妖狐";
+            position: absolute;
+            bottom: 8px;
+            right: 10px;
+            font-size: 13px;
+            background: rgba(0,0,0,0.4);
+            padding: 2px 10px;
+            border-radius: 20px;
+            color: #eac393;
+        }
+        .work-info {
+            padding: 16px 18px 20px;
+        }
+        .work-info h3 {
+            font-size: 18px;
+            color: #f0d2a0;
+            margin-bottom: 6px;
+        }
+        .work-info .meta {
+            font-size: 13px;
+            color: #9c88a6;
+            margin-bottom: 8px;
+        }
+        .work-info p {
+            font-size: 14px;
+            color: #b8a5c2;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .work-badge {
+            display: inline-block;
+            background: rgba(220, 140, 70, 0.2);
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: #eec08e;
+            margin-top: 10px;
+        }
+        /* 双栏信息 */
+        .feature-split {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+        @media (min-width: 900px) {
+            .feature-split {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .info-panel {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid rgba(190, 140, 90, 0.15);
+        }
+        .info-panel h3 {
+            font-size: 22px;
+            color: #eac393;
+            margin-bottom: 18px;
+            border-bottom: 1px solid rgba(200, 150, 100, 0.2);
+            padding-bottom: 12px;
+        }
+        .info-list {
+            list-style: none;
+        }
+        .info-list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed rgba(180, 140, 100, 0.15);
+            display: flex;
+            gap: 10px;
+            color: #bfa9c9;
+            font-size: 15px;
+        }
+        .info-list li::before {
+            content: "🦊";
+            flex-shrink: 0;
+        }
+        .faq-item {
+            margin-bottom: 18px;
+        }
+        .faq-question {
+            font-weight: 600;
+            color: #e0c8a0;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .faq-question::before {
+            content: "Q";
+            background: #b56a2d;
+            color: #fff;
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            flex-shrink: 0;
+        }
+        .faq-answer {
+            color: #a892b4;
+            padding-left: 30px;
+            font-size: 15px;
+        }
+        /* 现代演绎 */
+        .modern-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .modern-card {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 20px;
+            border-radius: 14px;
+            border: 1px solid rgba(180, 140, 100, 0.12);
+            text-align: center;
+        }
+        .modern-card .num {
+            font-size: 32px;
+            font-weight: 800;
+            color: #d1904a;
+            margin-bottom: 8px;
+        }
+        .modern-card h4 {
+            color: #e0c8a0;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+        .modern-card p {
+            color: #a892b4;
+            font-size: 14px;
+        }
+        /* 底部 */
+        .site-footer {
+            border-top: 1px solid rgba(200, 150, 100, 0.2);
+            padding: 40px 0 30px;
+            background: #0a0710;
+            text-align: center;
+        }
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .footer-nav a {
+            color: #9c88a6;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+        .footer-nav a:hover {
+            color: #eac393;
+        }
+        .footer-copy {
+            color: #6e5b78;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+        /* 响应式微调 */
+        @media (max-width: 600px) {
+            .hero-copy h1 {
+                font-size: 34px;
+            }
+            .site-name {
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
+            .logo-icon {
+                width: 34px;
+                height: 34px;
+                font-size: 20px;
+            }
+            .hero {
+                padding: 50px 0;
+            }
+            .section {
+                padding: 40px 0;
+            }
+            .section-head h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-wrap">
+        <div class="logo-area">
+            <div class="logo-icon">🦊</div>
+            <div class="site-name">妖狐之惑</div>
+            <div class="site-tagline">东方狐妖 · 魅影千年</div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#">狐妖起源</a></li>
+                <li><a href="#">作品档案</a></li>
+                <li><a href="#">文化解析</a></li>
+                <li><a href="#">二次元演绎</a></li>
+                <li><a href="#">狐迷社区</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-copy">
+            <h1>妖狐之惑<br><span>千年魅影，亦正亦邪</span></h1>
+            <p class="hero-desc">
+                从青丘九尾到都市传说，妖狐始终游走于神秘与诱惑之间。这里是妖狐文化爱好者的汇集地，探寻上古神话、经典志怪与当代创作中的狐妖形象，解开那穿越千年的魅惑之谜。
+            </p>
+            <div class="hero-tags">
+                <span class="tag">九尾狐</span>
+                <span class="tag">狐仙传说</span>
+                <span class="tag">妲己</span>
+                <span class="tag">灵狐动漫</span>
+                <span class="tag">狐妖游戏</span>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="fox-emblem">🦊✨</div>
+            <h3>妖狐文化研究所</h3>
+            <p>收录狐妖相关神话、影视、动漫、游戏与同人创作，带你全面了解妖狐之惑。</p>
+            <div class="btn-group">
+                <a href="#" class="btn-primary">探索狐妖世界</a>
+                <a href="#" class="btn-outline">热门作品</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main>
+    <!-- 传说起源 -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <div class="section-eyebrow">Origin</div>
+                <h2>妖狐传说起源</h2>
+                <p>狐妖形象如何从上古瑞兽演变为亦正亦邪的复杂存在？</p>
+            </div>
+            <div class="legend-grid">
+                <article class="legend-card">
+                    <div class="legend-icon">📜</div>
+                    <h3>上古瑞兽</h3>
+                    <p>先秦典籍中，九尾狐本是祥瑞与王权象征，出现于大禹治水、涂山氏等传说。青丘之国、九尾狐现，皆与圣王兴衰相关，是太平盛世的吉兆。</p>
+                </article>
+                <article class="legend-card">
+                    <div class="legend-icon">🌙</div>
+                    <h3>志怪演变</h3>
+                    <p>魏晋南北朝至唐宋，狐的形象逐渐人格化。《玄中记》《搜神记》等志怪小说中，狐妖开始拥有法术、情感与人类社会交集，魅惑与报恩故事并存。</p>
+                </article>
+                <article class="legend-card">
+                    <div class="legend-icon">🔥</div>
+                    <h3>妲己传说</h3>
+                    <p>明代《封神演义》将妲己塑造为九尾狐附身的祸国妖妃，极大影响后世对狐妖的认知。狐媚与祸水形象自此深入人心，成为文化符号。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品档案 -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-head">
+                <div class="section-eyebrow">Works</div>
+                <h2>妖狐主题作品档案</h2>
+                <p>从古典文学到现代影视动漫，妖狐始终是创作者钟爱的题材。</p>
+            </div>
+            <div class="work-grid">
+                <article class="work-item">
+                    <div class="work-cover">📖</div>
+                    <div class="work-info">
+                        <h3>《聊斋志异》</h3>
+                        <div class="meta">蒲松龄 · 清代文言短篇</div>
+                        <p>多篇狐仙故事，如婴宁、红玉、青凤，塑造了娇俏善良的狐女形象，也展示了狐妖世界的复杂人性。</p>
+                        <span class="work-badge">经典文学</span>
+                    </div>
+                </article>
+                <article class="work-item">
+                    <div class="work-cover">🎬</div>
+                    <div class="work-info">
+                        <h3>《封神演义》</h3>
+                        <div class="meta">明代神魔小说</div>
+                        <p>妲己作为九尾狐妖化身，其魅惑手段与祸国行径成为后世影视改编的热门角色，不断被重新解读。</p>
+                        <span class="work-badge">神魔史诗</span>
+                    </div>
+                </article>
+                <article class="work-item">
+                    <div class="work-cover">🎌</div>
+                    <div class="work-info">
+                        <h3>《夏目友人帐》</h3>
+                        <div class="meta">漫画 · 动画</div>
+                        <p>猫咪老师虽为斑，但作品中多次出现狐妖角色，展现日本妖怪文化中狐的灵性与温情，治愈风格广受喜爱。</p>
+                        <span class="work-badge">治愈系</span>
+                    </div>
+                </article>
+                <article class="work-item">
+                    <div class="work-cover">🎮</div>
+                    <div class="work-info">
+                        <h3>《阴阳师》</h3>
+                        <div class="meta">手游 · 衍生动画</div>
+                        <p>SP/SSR式神中不乏狐系角色，如大天狗、妖狐等，以华丽画风与日本平安时代背景，赋予狐妖新魅力。</p>
+                        <span class="work-badge">和风幻想</span>
+                    </div>
+                </article>
+                <article class="work-item">
+                    <div class="work-cover">📺</div>
+                    <div class="work-info">
+                        <h3>《狐妖小红娘》</h3>
+                        <div class="meta">国产动画 · 漫画</div>
+                        <p>以涂山狐妖为线索，串联人与妖的转世情缘，将狐妖设定为红线仙，创新演绎中国神话中的狐族。</p>
+                        <span class="work-badge">国漫之光</span>
+                    </div>
+                </article>
+                <article class="work-item">
+                    <div class="work-cover">🎬</div>
+                    <div class="work-info">
+                        <h3>《画皮》</h3>
+                        <div class="meta">电影 · 小说改编</div>
+                        <p>虽为西域妖狐设定，但其中狐妖小唯的形象融合魅惑与深情，引发对妖性与人性的思考。</p>
+                        <span class="work-badge">东方奇幻</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 文化解析与象征 -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <div class="section-eyebrow">Symbolism</div>
+                <h2>妖狐的文化象征</h2>
+                <p>妖狐之惑，究竟是什么在吸引着我们？</p>
+            </div>
+            <div class="feature-split">
+                <div class="info-panel">
+                    <h3>🦊 狐妖形象的多元解读</h3>
+                    <ul class="info-list">
+                        <li><strong>祥瑞与灾祸并存</strong> —— 九尾狐既是王权吉兆，又是祸国殃民的妖物，体现中国传统文化中的辩证思维。</li>
+                        <li><strong>情欲与智慧化身</strong> —— 狐妖往往聪明狡黠，善于魅惑，也常被赋予超越世俗的情感追求。</li>
+                        <li><strong>跨越物种的隐喻</strong> —— 狐妖故事常探讨人与异类之间的界限，反映对未知的恐惧与向往。</li>
+                        <li><strong>女性形象的投射</strong> —— 狐妖多为女性形象，承载了不同时代对女性魅力、危险与自主性的想象。</li>
+                        <li><strong>修行与长生</strong> —— 狐妖修炼成仙的故事，折射出人类对超越生命极限的渴望。</li>
+                    </ul>
+                </div>
+                <div class="info-panel">
+                    <h3>❓ 妖狐之惑常见疑问</h3>
+                    <div class="faq-item">
+                        <div class="faq-question">为什么九尾狐是狐妖的最高形态？</div>
+                        <div class="faq-answer">道教典籍中，狐修炼千年可长出多条尾巴，九尾代表道行极深，亦呼应九为阳数之极，象征通神变化。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">日本狐妖与中国的有何不同？</div>
+                        <div class="faq-answer">日本狐妖（妖狐）受中国影响，但分化出稻荷神使（善狐）与野狐（恶狐）等更细分类别，如玉藻前传说融合了妲己故事。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">现代作品中妖狐为何常被洗白？</div>
+                        <div class="faq-answer">当代创作者更倾向挖掘狐妖的孤独与人性，赋予其悲剧色彩或善良本质，以满足观众对复杂角色的审美需求。</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 现代演绎与流行文化 -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-head">
+                <div class="section-eyebrow">Modern</div>
+                <h2>妖狐的现代演绎</h2>
+                <p>妖狐之惑在当代游戏、动漫与影视中焕发新生。</p>
+            </div>
+            <div class="modern-grid">
+                <div class="modern-card">
+                    <div class="num">80%</div>
+                    <h4>狐妖角色人气</h4>
+                    <p>在多项动漫游戏角色投票中，狐妖系角色常位居前列，其魅力跨越文化界限。</p>
+                </div>
+                <div class="modern-card">
+                    <div class="num">30+</div>
+                    <h4>知名狐妖IP</h4>
+                    <p>从《狐妖小红娘》到《元气少女缘结神》，已有数十部作品以狐妖为核心或重要角色。</p>
+                </div>
+                <div class="modern-card">
+                    <div class="num">千年</div>
+                    <h4>文化传承</h4>
+                    <p>狐妖形象从先秦延续至今，不断被重新诠释，展现强大的生命力。</p>
+                </div>
+                <div class="modern-card">
+                    <div class="num">多领域</div>
+                    <h4>跨界覆盖</h4>
+                    <p>文学、影视、动画、游戏、音乐、Cosplay，狐妖美学渗透至亚文化各个角落。</p>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top: 35px;">
+                <p style="color:#a892b4; max-width: 700px; margin: 0 auto; font-size: 15px;">
+                    妖狐之惑不只是对神秘力量的迷恋，更是对美、智慧与自由灵魂的向往。无论是古典狐仙还是现代狐妖，那份亦正亦邪的魅力始终撩动心弦。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 相关推荐与延伸 -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <div class="section-eyebrow">Explore</div>
+                <h2>延伸探索</h2>
+                <p>进一步了解狐妖文化周边与同好社区</p>
+            </div>
+            <div class="legend-grid">
+                <article class="legend-card">
+                    <div class="legend-icon">🎨</div>
+                    <h3>狐妖美学图鉴</h3>
+                    <p>从传统工笔到现代二次元，狐妖形象在不同画风中展现出迥异气质。收集经典立绘、同人插画与Cosplay作品，感受视觉冲击。</p>
+                </article>
+                <article class="legend-card">
+                    <div class="legend-icon">📚</div>
+                    <h3>志怪古籍书单</h3>
+                    <p>推荐阅读《山海经》《搜神记》《聊斋志异》《阅微草堂笔记》等古籍中狐妖相关篇章，溯源千年魅影。</p>
+                </article>
+                <article class="legend-card">
+                    <div class="legend-icon">💬</div>
+                    <h3>狐迷交流圈</h3>
+                    <p>加入狐妖文化爱好者聚集地，分享原创故事、考据心得、作品推荐，共同探讨妖狐之惑的更多面向。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-nav">
+            <a href="#">关于本站</a>
+            <a href="#">狐妖起源</a>
+            <a href="#">作品库</a>
+            <a href="#">文化考据</a>
+            <a href="#">同人创作</a>
+            <a href="#">联系方式</a>
+        </div>
+        <div class="footer-copy">
+            <p>🦊 妖狐之惑 · 东方狐妖文化爱好者之家</p>
+            <p style="margin-top: 6px;">本站内容基于公开文化与历史资料整理，仅供学习交流 · 部分作品版权归原作者所有</p>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+  </html>
