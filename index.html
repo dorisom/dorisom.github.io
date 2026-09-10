@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>火影忍者同人小说-热门同人作品推荐与创作分享社区</title>
+    <meta name="description" content="火影忍者同人小说爱好者聚集地，提供热门同人推荐、原创作品分享、角色CP解读与创作指南，带你进入忍者世界的无限想象空间。">
+    <meta name="keywords" content="火影忍者同人小说,火影同人,鸣人同人,佐助同人,火影CP文,忍者同人创作">
+    <link rel="stylesheet" href="data:text/css,">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: #f5f0e8;
+            color: #2c2c2c;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .site-header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 16px 0;
+            border-bottom: 3px solid #e94560;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(145deg, #f9a826, #e94560);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 20px;
+            color: #fff;
+            box-shadow: 0 0 12px rgba(233,69,96,0.6);
+        }
+        .logo-text {
+            font-size: 22px;
+            font-weight: 800;
+            color: #f5f0e8;
+            letter-spacing: 1px;
+        }
+        .logo-text span {
+            color: #f9a826;
+        }
+        .main-nav ul {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        .main-nav ul li a {
+            display: block;
+            padding: 8px 16px;
+            color: #d4d4dc;
+            font-size: 15px;
+            font-weight: 500;
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+        .main-nav ul li a:hover,
+        .main-nav ul li a.active {
+            background: rgba(233,69,96,0.2);
+            color: #f9a826;
+        }
+        .search-box {
+            display: flex;
+            background: rgba(255,255,255,0.1);
+            border-radius: 30px;
+            padding: 4px;
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+        .search-box input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #fff;
+            padding: 6px 14px;
+            font-size: 14px;
+            width: 180px;
+        }
+        .search-box input::placeholder {
+            color: #aaa;
+        }
+        .search-box button {
+            background: #e94560;
+            border: none;
+            color: #fff;
+            border-radius: 30px;
+            padding: 6px 18px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        .search-box button:hover {
+            background: #f9a826;
+        }
+
+        /* Hero */
+        .hero-section {
+            background: linear-gradient(120deg, #0f3460 0%, #16213e 60%, #1a1a2e 100%);
+            padding: 60px 0 50px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section::before {
+            content: "忍";
+            position: absolute;
+            font-size: 300px;
+            color: rgba(255,255,255,0.03);
+            right: 20px;
+            top: -40px;
+            font-weight: 900;
+        }
+        .hero-inner {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .hero-text {
+            flex: 1;
+            min-width: 280px;
+        }
+        .hero-text h1 {
+            font-size: 38px;
+            color: #fff;
+            margin-bottom: 12px;
+            font-weight: 900;
+            line-height: 1.3;
+        }
+        .hero-text h1 span {
+            color: #f9a826;
+            text-shadow: 0 0 20px rgba(249,168,38,0.5);
+        }
+        .hero-text p {
+            color: #b8c6d4;
+            font-size: 17px;
+            margin-bottom: 24px;
+            max-width: 600px;
+        }
+        .hero-badges {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .badge {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(249,168,38,0.3);
+            padding: 6px 16px;
+            border-radius: 30px;
+            color: #f9a826;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .hero-stats {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 28px;
+            font-weight: 800;
+            color: #fff;
+        }
+        .stat-label {
+            font-size: 13px;
+            color: #8a9db0;
+        }
+        .hero-cover {
+            flex: 0 0 260px;
+            background: linear-gradient(145deg, #1a1a2e, #0f3460);
+            border-radius: 16px;
+            padding: 30px 20px;
+            text-align: center;
+            border: 1px solid rgba(249,168,38,0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+        .hero-cover .cover-icon {
+            font-size: 70px;
+            margin-bottom: 8px;
+        }
+        .hero-cover h3 {
+            color: #f9a826;
+            font-size: 20px;
+            margin-bottom: 6px;
+        }
+        .hero-cover p {
+            color: #a0b0c0;
+            font-size: 13px;
+        }
+
+        /* 分类导航 */
+        .category-bar {
+            background: #fff;
+            padding: 18px 0;
+            border-bottom: 1px solid #e8e0d6;
+        }
+        .category-list {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            padding-bottom: 4px;
+        }
+        .category-list li {
+            flex-shrink: 0;
+        }
+        .category-list a {
+            display: block;
+            padding: 8px 20px;
+            background: #f5f0e8;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #4a4a4a;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+        .category-list a:hover,
+        .category-list a.cat-active {
+            background: #e94560;
+            color: #fff;
+            border-color: #e94560;
+        }
+
+        /* 主要内容区 */
+        .main-content {
+            padding: 40px 0 60px;
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            border-bottom: 2px solid #e94560;
+            padding-bottom: 10px;
+        }
+        .section-title h2 {
+            font-size: 24px;
+            font-weight: 800;
+            color: #1a1a2e;
+        }
+        .section-title h2 i {
+            font-style: normal;
+            color: #e94560;
+            margin-right: 8px;
+        }
+        .section-more {
+            font-size: 14px;
+            color: #888;
+            font-weight: 500;
+        }
+        .section-more:hover {
+            color: #e94560;
+        }
+
+        /* 热门推荐卡片 */
+        .hot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+        .hot-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #f0e8de;
+        }
+        .hot-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        }
+        .card-cover {
+            height: 160px;
+            background: linear-gradient(135deg, #1a1a2e, #0f3460);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            position: relative;
+        }
+        .card-cover .rank {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background: #f9a826;
+            color: #1a1a2e;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 14px;
+        }
+        .card-body {
+            padding: 16px;
+        }
+        .card-body h3 {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #1a1a2e;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .card-tags {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+        .card-tags span {
+            background: #f5f0e8;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            color: #666;
+        }
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: #999;
+            border-top: 1px solid #f0e8de;
+            padding-top: 8px;
+            margin-top: 6px;
+        }
+        .card-meta .like {
+            color: #e94560;
+        }
+
+        /* 双列布局 */
+        .two-column {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 32px;
+            margin-bottom: 40px;
+        }
+
+        /* 更新列表 */
+        .update-list {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+        }
+        .update-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 14px 0;
+            border-bottom: 1px dashed #e8e0d6;
+        }
+        .update-item:last-child {
+            border-bottom: none;
+        }
+        .update-item .chapter-no {
+            background: #f5f0e8;
+            color: #e94560;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            flex-shrink: 0;
+        }
+        .update-item .update-info {
+            flex: 1;
+            min-width: 0;
+        }
+        .update-item .update-info h4 {
+            font-size: 16px;
+            font-weight: 600;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .update-item .update-info p {
+            font-size: 13px;
+            color: #999;
+        }
+        .update-item .time {
+            font-size: 13px;
+            color: #bbb;
+            flex-shrink: 0;
+        }
+
+        /* 榜单 */
+        .ranking-box {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+        }
+        .ranking-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        .ranking-tabs button {
+            background: #f5f0e8;
+            border: none;
+            padding: 6px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            color: #666;
+            transition: all 0.3s;
+        }
+        .ranking-tabs button.active,
+        .ranking-tabs button:hover {
+            background: #e94560;
+            color: #fff;
+        }
+        .rank-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px solid #f5f0e8;
+            font-size: 14px;
+        }
+        .rank-list li:last-child {
+            border-bottom: none;
+        }
+        .rank-num {
+            font-weight: 800;
+            color: #e94560;
+            width: 24px;
+            text-align: center;
+        }
+        .rank-list li:nth-child(1) .rank-num,
+        .rank-list li:nth-child(2) .rank-num,
+        .rank-list li:nth-child(3) .rank-num {
+            color: #f9a826;
+        }
+        .rank-list .rank-title {
+            flex: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .rank-list .rank-score {
+            color: #999;
+            font-size: 13px;
+        }
+
+        /* 创作指南 */
+        .guide-section {
+            background: linear-gradient(135deg, #fff8f0, #f5f0e8);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+            border: 1px solid #e8dcc8;
+        }
+        .guide-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-top: 20px;
+        }
+        .guide-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border-left: 4px solid #e94560;
+        }
+        .guide-item h3 {
+            font-size: 17px;
+            margin-bottom: 8px;
+            color: #1a1a2e;
+        }
+        .guide-item p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* CP 专区 */
+        .cp-section {
+            margin-bottom: 40px;
+        }
+        .cp-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .cp-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #f0e8de;
+            transition: all 0.3s;
+        }
+        .cp-card:hover {
+            border-color: #e94560;
+            box-shadow: 0 4px 16px rgba(233,69,96,0.1);
+        }
+        .cp-icon {
+            font-size: 40px;
+            margin-bottom: 8px;
+        }
+        .cp-card h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+        .cp-card p {
+            font-size: 13px;
+            color: #888;
+            margin-top: 4px;
+        }
+        .cp-tag {
+            display: inline-block;
+            background: #f5f0e8;
+            padding: 3px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-top: 8px;
+            color: #e94560;
+            font-weight: 600;
+        }
+
+        /* FAQ */
+        .faq-section {
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+        }
+        .faq-item {
+            padding: 16px 0;
+            border-bottom: 1px solid #f0e8de;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-item h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 6px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-item h3::after {
+            content: "+";
+            font-size: 20px;
+            color: #e94560;
+            font-weight: 400;
+        }
+        .faq-item p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.8;
+            padding-top: 4px;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            background: #1a1a2e;
+            padding: 40px 0 20px;
+            color: #8a9db0;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .footer-col h4 {
+            color: #f5f0e8;
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        .footer-col ul li {
+            padding: 4px 0;
+            font-size: 14px;
+        }
+        .footer-col ul li a:hover {
+            color: #f9a826;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        /* 响应式 */
+        @media (max-width: 900px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+            .hero-text h1 {
+                font-size: 28px;
+            }
+            .hero-cover {
+                flex: 0 0 100%;
+            }
+            .header-inner {
+                justify-content: center;
+            }
+            .search-box {
+                width: 100%;
+                margin-top: 8px;
+            }
+            .search-box input {
+                flex: 1;
+                width: auto;
+            }
+        }
+        @media (max-width: 600px) {
+            .hero-section {
+                padding: 40px 0;
+            }
+            .hero-text h1 {
+                font-size: 24px;
+            }
+            .hot-grid,
+            .cp-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .main-nav ul {
+                justify-content: center;
+            }
+            .main-nav ul li a {
+                padding: 6px 12px;
+                font-size: 14px;
+            }
+            .section-title h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo-area">
+            <div class="logo-icon">忍</div>
+            <div class="logo-text">火影<span>同人馆</span></div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#" class="active">首页</a></li>
+                <li><a href="#">小说库</a></li>
+                <li><a href="#">排行榜</a></li>
+                <li><a href="#">CP专区</a></li>
+                <li><a href="#">创作学院</a></li>
+                <li><a href="#">社区</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="搜索同人小说或角色...">
+            <button>搜索</button>
+        </div>
+    </div>
+</header>
+
+<section class="hero-section">
+    <div class="container hero-inner">
+        <div class="hero-text">
+            <h1>火影忍者<span>同人小说</span>世界</h1>
+            <p>在这里，木叶的忍者们拥有了全新的故事线。不论你是佐鸣的忠实拥护者，还是喜欢穿越、重生、系统流，都能找到让你熬夜追更的同人佳作。每一位忍者的命运，由你重新书写。</p>
+            <div class="hero-badges">
+                <span class="badge">🔥 热门连载</span>
+                <span class="badge">✒️ 同人创作</span>
+                <span class="badge">💞 CP 互动</span>
+                <span class="badge">📖 免费阅读</span>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">12,800+</div>
+                    <div class="stat-label">原创作品</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3,500+</div>
+                    <div class="stat-label">连载中</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50万+</div>
+                    <div class="stat-label">火影迷收藏</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-cover">
+            <div class="cover-icon">🍥</div>
+            <h3>今日推荐</h3>
+            <p>《木叶之影》</p>
+            <p style="margin-top:4px;color:#f9a826;font-size:12px;">🔥 本周热度 No.1</p>
+        </div>
+    </div>
+</section>
+
+<div class="category-bar">
+    <div class="container">
+        <ul class="category-list">
+            <li><a href="#" class="cat-active">全部</a></li>
+            <li><a href="#">穿越重生</a></li>
+            <li><a href="#">原著衍生</a></li>
+            <li><a href="#">系统流</a></li>
+            <li><a href="#">鸣人中心</a></li>
+            <li><a href="#">佐助中心</a></li>
+            <li><a href="#">宇智波家族</a></li>
+            <li><a href="#">晓组织</a></li>
+            <li><a href="#">木叶日常</a></li>
+            <li><a href="#">忍者大战</a></li>
+            <li><a href="#">性转题材</a></li>
+        </ul>
+    </div>
+</div>
+
+<main class="main-content">
+    <div class="container">
+
+        <!-- 热门推荐 -->
+        <section class="hot-section">
+            <div class="section-title">
+                <h2><i>🔥</i>热门火影忍者同人小说</h2>
+                <a href="#" class="section-more">查看全部 &raquo;</a>
+            </div>
+            <div class="hot-grid">
+                <article class="hot-card">
+                    <div class="card-cover">
+                        <span class="rank">1</span>
+                        🍥
+                    </div>
+                    <div class="card-body">
+                        <h3>木叶之影</h3>
+                        <div class="card-tags"><span>穿越</span><span>系统</span><span>鸣人</span></div>
+                        <p style="font-size:13px;color:#888;height:40px;overflow:hidden;">主角穿越成木叶孤儿，觉醒影级系统，从下忍开始改变忍界命运。</p>
+                        <div class="card-meta">
+                            <span>🔥 38.2万</span>
+                            <span class="like">❤️ 1.2万</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="hot-card">
+                    <div class="card-cover">
+                        <span class="rank">2</span>
+                        🌟
+                    </div>
+                    <div class="card-body">
+                        <h3>宇智波佐助的重启人生</h3>
+                        <div class="card-tags"><span>重生</span><span>佐助</span><span>复仇</span></div>
+                        <p style="font-size:13px;color:#888;height:40px;overflow:hidden;">战败后的佐助意外回到7岁，这一次他决定不再走老路。</p>
+                        <div class="card-meta">
+                            <span>🔥 31.5万</span>
+                            <span class="like">❤️ 9864</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="hot-card">
+                    <div class="card-cover">
+                        <span class="rank">3</span>
+                        🌸
+                    </div>
+                    <div class="card-body">
+                        <h3>春野樱的医疗忍者之路</h3>
+                        <div class="card-tags"><span>樱</span><span>成长</span><span>原著向</span></div>
+                        <p style="font-size:13px;color:#888;height:40px;overflow:hidden;">如果樱在第七班成立前就拜师纲手，故事会有何不同？</p>
+                        <div class="card-meta">
+                            <span>🔥 27.8万</span>
+                            <span class="like">❤️ 8231</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="hot-card">
+                    <div class="card-cover">
+                        <span class="rank">4</span>
+                        🌙
+                    </div>
+                    <div class="card-body">
+                        <h3>晓组织的新成员</h3>
+                        <div class="card-tags"><span>晓</span><span>反派</span><span>脑洞</span></div>
+                        <p style="font-size:13px;color:#888;height:40px;overflow:hidden;">穿越成晓组织外围成员，表示只想摸鱼，但佩恩总盯着我。</p>
+                        <div class="card-meta">
+                            <span>🔥 24.3万</span>
+                            <span class="like">❤️ 7654</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="hot-card">
+                    <div class="card-cover">
+                        <span class="rank">5</span>
+                        ⚡
+                    </div>
+                    <div class="card-body">
+                        <h3>四代目火影的日常</h3>
+                        <div class="card-tags"><span>波风水门</span><span>日常</span><span>温馨</span></div>
+                        <p style="font-size:13px;color:#888;height:40px;overflow:hidden;">水门没有死在九尾之乱，木叶村的日常变得热闹起来。</p>
+                        <div class="card-meta">
+                            <span>🔥 21.9万</span>
+                            <span class="like">❤️ 6932</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="hot-card">
+                    <div class="card-cover">
+                        <span class="rank">6</span>
+                        🌀
+                    </div>
+                    <div class="card-body">
+                        <h3>漩涡血脉觉醒</h3>
+                        <div class="card-tags"><span>鸣人</span><span>血脉</span><span>战力</span></div>
+                        <p style="font-size:13px;color:#888;height:40px;overflow:hidden;">鸣人在中忍考试时意外觉醒漩涡一族秘术，实力暴涨。</p>
+                        <div class="card-meta">
+                            <span>🔥 18.7万</span>
+                            <span class="like">❤️ 5402</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 双列：最新更新与榜单 -->
+        <div class="two-column">
+            <section class="update-list">
+                <div class="section-title">
+                    <h2><i>📖</i>最新更新</h2>
+                    <a href="#" class="section-more">更多更新 &raquo;</a>
+                </div>
+                <div class="update-item">
+                    <span class="chapter-no">第 87 章</span>
+                    <div class="update-info">
+                        <h4>木叶之影</h4>
+                        <p>作者：千鸟飞鱼</p>
+                    </div>
+                    <span class="time">12 分钟前</span>
+                </div>
+                <div class="update-item">
+                    <span class="chapter-no">第 52 章</span>
+                    <div class="update-info">
+                        <h4>宇智波佐助的重启人生</h4>
+                        <p>作者：宇智波团子</p>
+                    </div>
+                    <span class="time">25 分钟前</span>
+                </div>
+                <div class="update-item">
+                    <span class="chapter-no">第 120 章</span>
+                    <div class="update-info">
+                        <h4>晓组织的新成员</h4>
+                        <p>作者：南贺川</p>
+                    </div>
+                    <span class="time">40 分钟前</span>
+                </div>
+                <div class="update-item">
+                    <span class="chapter-no">第 33 章</span>
+                    <div class="update-info">
+                        <h4>四代目火影的日常</h4>
+                        <p>作者：螺旋丸不加辣</p>
+                    </div>
+                    <span class="time">1 小时前</span>
+                </div>
+                <div class="update-item">
+                    <span class="chapter-no">第 66 章</span>
+                    <div class="update-info">
+                        <h4>春野樱的医疗忍者之路</h4>
+                        <p>作者：粉发樱花</p>
+                    </div>
+                    <span class="time">2 小时前</span>
+                </div>
+                <div class="update-item">
+                    <span class="chapter-no">第 41 章</span>
+                    <div class="update-info">
+                        <h4>旗木卡卡西的面罩之下</h4>
+                        <p>作者：白牙传说</p>
+                    </div>
+                    <span class="time">3 小时前</span>
+                </div>
+            </section>
+
+            <aside class="ranking-box">
+                <div class="section-title">
+                    <h2><i>🏆</i>同人榜单</h2>
+                </div>
+                <div class="ranking-tabs">
+                    <button class="active">周榜</button>
+                    <button>月榜</button>
+                    <button>总榜</button>
+                </div>
+                <ul class="rank-list">
+                    <li><span class="rank-num">1</span><span class="rank-title">木叶之影</span><span class="rank-score">🔥 9.8分</span></li>
+                    <li><span class="rank-num">2</span><span class="rank-title">宇智波佐助的重启人生</span><span class="rank-score">9.6分</span></li>
+                    <li><span class="rank-num">3</span><span class="rank-title">晓组织的新成员</span><span class="rank-score">9.5分</span></li>
+                    <li><span class="rank-num">4</span><span class="rank-title">春野樱的医疗忍者之路</span><span class="rank-score">9.3分</span></li>
+                    <li><span class="rank-num">5</span><span class="rank-title">四代目火影的日常</span><span class="rank-score">9.2分</span></li>
+                    <li><span class="rank-num">6</span><span class="rank-title">漩涡血脉觉醒</span><span class="rank-score">9.1分</span></li>
+                    <li><span class="rank-num">7</span><span class="rank-title">旗木卡卡西的面罩之下</span><span class="rank-score">9.0分</span></li>
+                    <li><span class="rank-num">8</span><span class="rank-title">木叶丸的逆袭</span><span class="rank-score">8.9分</span></li>
+                </ul>
+            </aside>
+        </div>
+
+        <!-- CP 专区 -->
+        <section class="cp-section">
+            <div class="section-title">
+                <h2><i>💞</i>热门 CP 同人专区</h2>
+                <a href="#" class="section-more">CP 总览 &raquo;</a>
+            </div>
+            <div class="cp-grid">
+                <div class="cp-card">
+                    <div class="cp-icon">🦊⚡</div>
+                    <h3>鸣佐 / 佐鸣</h3>
+                    <p>羁绊最深的一对</p>
+                    <span class="cp-tag">2,340+ 篇同人</span>
+                </div>
+                <div class="cp-card">
+                    <div class="cp-icon">🌸🦊</div>
+                    <h3>鸣樱</h3>
+                    <p>青梅竹马的温柔</p>
+                    <span class="cp-tag">1,860+ 篇同人</span>
+                </div>
+                <div class="cp-card">
+                    <div class="cp-icon">🌸⚡</div>
+                    <h3>佐樱</h3>
+                    <p>官方 CP 的甜蜜</p>
+                    <span class="cp-tag">1,620+ 篇同人</span>
+                </div>
+                <div class="cp-card">
+                    <div class="cp-icon">🦊🔮</div>
+                    <h3>鸣雏</h3>
+                    <p>温柔与阳光</p>
+                    <span class="cp-tag">1,450+ 篇同人</span>
+                </div>
+                <div class="cp-card">
+                    <div class="cp-icon">🐍⚡</div>
+                    <h3>佐鼬</h3>
+                    <p>兄弟情深</p>
+                    <span class="cp-tag">1,230+ 篇同人</span>
+                </div>
+                <div class="cp-card">
+                    <div class="cp-icon">🧣🌹</div>
+                    <h3>卡伊</h3>
+                    <p>成熟大人的默契</p>
+                    <span class="cp-tag">980+ 篇同人</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 创作指南 -->
+        <section class="guide-section">
+            <div class="section-title">
+                <h2><i>✍️</i>火影同人创作指南</h2>
+            </div>
+            <p style="color:#666;font-size:15px;max-width:800px;">想动笔写自己的火影忍者同人小说却不知从何开始？这里整理了一些实用建议，帮助你构建属于自己的忍者物语。</p>
+            <div class="guide-grid">
+                <div class="guide-item">
+                    <h3>📌 选好切入时间线</h3>
+                    <p>是跟随原著主线，还是另辟蹊径？选择忍者学校时期、中忍考试、疾风传，或者战后和平年代，不同时间线给故事带来完全不同的基调。</p>
+                </div>
+                <div class="guide-item">
+                    <h3>💡 角色塑造有度</h3>
+                    <p>同人写作中角色既要有原作灵魂，也要允许合理发展。避免过度OOC（角色崩坏），让鸣人的乐观、佐助的执着在合理情境中绽放新光彩。</p>
+                </div>
+                <div class="guide-item">
+                    <h3>⚔️ 平衡战力与剧情</h3>
+                    <p>火影世界的忍术体系是亮点。写战斗时注意逻辑与观赏性，克制“主角无敌”的冲动，让每一场胜利都来之不易。</p>
+                </div>
+                <div class="guide-item">
+                    <h3>📝 持续更新是王道</h3>
+                    <p>同人读者黏性高但耐心有限。保持稳定的更新频率，在章末留下悬念，积极回复读者评论，这些都是积累人气的好方法。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <div class="section-title">
+                <h2><i>❓</i>同人阅读常见问题</h2>
+            </div>
+            <div class="faq-item">
+                <h3>火影忍者同人小说在哪里可以免费阅读？</h3>
+                <p>本站收录了大量免费火影忍者同人作品，涵盖穿越、重生、系统、原著衍生等多种类型。你可以通过顶部搜索或分类导航快速找到感兴趣的小说，全部章节均支持在线免费阅读。</p>
+            </div>
+            <div class="faq-item">
+                <h3>如何找到好看的完结同人？</h3>
+                <p>建议优先查看“总榜”排名靠前的作品，它们经过了大量读者的检验。也可以在分类中选择“完结”标签，再按收藏数排序。本站推荐位上的作品均经过编辑人工筛选，质量较有保障。</p>
+            </div>
+            <div class="faq-item">
+                <h3>可以在这里发布自己的同人作品吗？</h3>
+                <p>当然可以。注册作者账号后，点击“创作中心”即可上传新作品。建议在发布前仔细阅读平台创作规范，避免使用不当内容。连载作品记得定期更新，积累自己的读者群。</p>
+            </div>
+            <div class="faq-item">
+                <h3>同人创作会涉及版权问题吗？</h3>
+                <p>火影忍者同人属于二次创作范畴。本站仅提供创作与交流平台，所有作品版权归原作者所有。请尊重原作设定，避免商业用途，共同维护良好的同人创作环境。</p>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>火影同人馆</h4>
+                <ul>
+                    <li>关于我们</li>
+                    <li>联系方式</li>
+                    <li>加入编辑团队</li>
+                    <li>友情链接</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>阅读分类</h4>
+                <ul>
+                    <li>穿越重生</li>
+                    <li>原著衍生</li>
+                    <li>系统流</li>
+                    <li>CP 同人</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>创作支持</h4>
+                <ul>
+                    <li>写作指南</li>
+                    <li>投稿说明</li>
+                    <li>推荐规则</li>
+                    <li>常见问题</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>社区规范</h4>
+                <ul>
+                    <li>用户协议</li>
+                    <li>隐私政策</li>
+                    <li>内容审核标准</li>
+                    <li>侵权投诉</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 火影同人馆 · 火影忍者同人小说爱好者之家 | 本站内容为同人创作，与原作无关</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // FAQ 展开收起
+    document.querySelectorAll('.faq-item h3').forEach(function(item) {
+        item.addEventListener('click', function() {
+            var p = this.nextElementSibling;
+            if (p.style.display === 'none' || !p.style.display) {
+                p.style.display = 'block';
+                this.style.color = '#e94560';
+            } else {
+                p.style.display = 'none';
+                this.style.color = '#1a1a2e';
+            }
+        });
+        item.nextElementSibling.style.display = 'none';
+    });
+
+    // 榜单标签切换
+    document.querySelectorAll('.ranking-tabs button').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.ranking-tabs button').forEach(function(b) {
+                b.classList.remove('active');
+            });
+            this.classList.add('active');
+        });
+    });
+</script>
+
+</body>
+                      </html>
