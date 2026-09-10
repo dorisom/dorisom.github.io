@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花都小道士小说免费阅读-全本无弹窗最新章节抢先看</title>
+    <meta name="description" content="花都小道士小说免费阅读专题，为您提供花都小道士全文章节完整阅读、清爽版式、无弹窗体验，涵盖都市修仙、道士下山、热血奇遇等精彩内容，每日同步更新。">
+    <meta name="keywords" content="花都小道士,花都小道士小说,花都小道士免费阅读,花都小道士全本,都市修仙小说,道士下山">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", sans-serif; background: #f4f2ee; color: #2b2b2b; line-height: 1.7; }
+        a { text-decoration: none; color: inherit; }
+        ul, ol { list-style: none; }
+
+        /* 顶栏 */
+        .top-bar { background: #1f1f1f; color: #aaa; font-size: 13px; padding: 6px 0; }
+        .top-bar-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; padding: 0 16px; }
+        .top-bar a { color: #ccc; margin-left: 14px; transition: color .2s; }
+        .top-bar a:hover { color: #e8c877; }
+
+        /* 头部 */
+        .site-header { background: #fff; border-bottom: 2px solid #e6dcc8; }
+        .header-main { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 18px 16px; flex-wrap: wrap; }
+        .logo h1 { font-size: 28px; font-weight: 800; color: #2c3e50; letter-spacing: 1px; }
+        .logo h1 span { color: #b8860b; }
+        .logo p { font-size: 13px; color: #8b8378; letter-spacing: 2px; margin-top: 2px; }
+        .search-box { display: flex; align-items: center; background: #f5f2ec; border-radius: 30px; padding: 4px 6px 4px 18px; border: 1px solid #e0d7c8; }
+        .search-box input { border: none; background: transparent; width: 220px; padding: 8px 0; font-size: 14px; outline: none; color: #333; }
+        .search-box button { background: #b8860b; border: none; color: #fff; padding: 8px 20px; border-radius: 30px; font-size: 14px; cursor: pointer; transition: background .2s; }
+        .search-box button:hover { background: #9a7209; }
+
+        /* 导航 */
+        .nav-bar { background: #2c3e50; }
+        .nav-menu { max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; }
+        .nav-menu li a { display: block; padding: 12px 22px; color: #e0e0e0; font-size: 15px; font-weight: 500; border-bottom: 3px solid transparent; transition: all .2s; }
+        .nav-menu li a:hover, .nav-menu li a.active { background: #22313f; color: #e8c877; border-bottom-color: #e8c877; }
+
+        /* 主体容器 */
+        .container { max-width: 1200px; margin: 20px auto; padding: 0 16px; display: flex; gap: 24px; }
+        .main-content { flex: 1; min-width: 0; }
+        .side-content { width: 300px; flex-shrink: 0; }
+
+        /* 书籍主卡 */
+        .book-hero { background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.05); display: flex; padding: 28px; gap: 28px; margin-bottom: 24px; border: 1px solid #e8e0d2; }
+        .book-cover { width: 180px; height: 240px; background: linear-gradient(145deg, #2c3e50, #4a5e70); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 6px 18px rgba(0,0,0,.15); }
+        .book-cover span { color: #e8c877; font-size: 44px; font-weight: 800; text-shadow: 2px 2px 4px rgba(0,0,0,.3); letter-spacing: 6px; writing-mode: vertical-lr; }
+        .book-info { flex: 1; }
+        .book-info h2 { font-size: 30px; color: #1e2b38; margin-bottom: 6px; font-weight: 800; }
+        .book-tags { margin: 12px 0 10px; display: flex; flex-wrap: wrap; gap: 8px; }
+        .tag { background: #f0ebe3; color: #7a6a55; padding: 3px 12px; border-radius: 20px; font-size: 13px; border: 1px solid #ddd0be; }
+        .tag.hot { background: #fdebd0; color: #b85c00; border-color: #f0c896; }
+        .book-desc { color: #555; font-size: 15px; margin: 12px 0 16px; text-align: justify; }
+        .book-meta { display: flex; flex-wrap: wrap; gap: 18px; font-size: 14px; color: #777; margin-bottom: 18px; }
+        .book-meta i { font-style: normal; background: #eef2f5; padding: 3px 10px; border-radius: 4px; }
+        .btn-group { display: flex; gap: 14px; flex-wrap: wrap; }
+        .btn-primary { background: #b8860b; color: #fff !important; padding: 10px 28px; border-radius: 30px; font-weight: 600; font-size: 16px; transition: all .2s; display: inline-block; border: none; cursor: pointer; }
+        .btn-primary:hover { background: #9a7209; transform: translateY(-2px); box-shadow: 0 4px 15px rgba(184,134,11,.3); }
+        .btn-outline { background: transparent; border: 2px solid #b8860b; color: #b8860b !important; padding: 8px 24px; border-radius: 30px; font-weight: 600; font-size: 15px; transition: all .2s; display: inline-block; }
+        .btn-outline:hover { background: #b8860b; color: #fff !important; }
+
+        /* 栏目通用 */
+        .section { background: #fff; border-radius: 12px; padding: 24px; margin-bottom: 24px; border: 1px solid #e8e0d2; }
+        .section-title { font-size: 22px; font-weight: 700; color: #1e2b38; margin-bottom: 18px; display: flex; align-items: center; }
+        .section-title::before { content: ''; width: 4px; height: 22px; background: #b8860b; border-radius: 2px; margin-right: 12px; display: inline-block; }
+        .section-title span { color: #999; font-size: 13px; font-weight: 400; margin-left: auto; }
+
+        /* 章节列表 */
+        .chapter-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; }
+        .chapter-item { padding: 8px 14px; background: #faf8f5; border-radius: 8px; border-left: 3px solid #d4c6b2; transition: all .2s; font-size: 15px; }
+        .chapter-item:hover { background: #f0ebe3; border-left-color: #b8860b; transform: translateX(4px); }
+        .chapter-item a { display: block; color: #444; }
+        .chapter-item a:hover { color: #b8860b; }
+        .chapter-item .time { float: right; color: #aaa; font-size: 12px; margin-left: 10px; }
+
+        /* 侧边卡片 */
+        .side-card { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 20px; border: 1px solid #e8e0d2; }
+        .side-title { font-size: 18px; font-weight: 700; color: #1e2b38; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+        .rank-list li { display: flex; align-items: center; padding: 10px 0; border-bottom: 1px dashed #f0ece6; font-size: 14px; }
+        .rank-list li:last-child { border-bottom: none; }
+        .rank-num { width: 24px; height: 24px; background: #e8e0d2; border-radius: 4px; color: #7a6a55; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; }
+        .rank-num.top1 { background: #f39c12; color: #fff; }
+        .rank-num.top2 { background: #7f8c8d; color: #fff; }
+        .rank-num.top3 { background: #d35400; color: #fff; }
+        .rank-list li a { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .rank-list li a:hover { color: #b8860b; }
+        .rank-list .status { font-size: 12px; color: #27ae60; flex-shrink: 0; margin-left: 8px; }
+
+        /* 风格标签 */
+        .style-tags { display: flex; flex-wrap: wrap; gap: 10px; }
+        .style-tag { background: #f5f2ec; padding: 8px 16px; border-radius: 20px; font-size: 14px; color: #5a4a3a; border: 1px solid #e0d7c8; transition: all .2s; }
+        .style-tag:hover { background: #b8860b; color: #fff; border-color: #b8860b; }
+
+        /* 阅读指南 */
+        .guide-box { background: #faf8f5; border-radius: 10px; padding: 18px; border-left: 4px solid #b8860b; }
+        .guide-box h3 { font-size: 16px; margin-bottom: 8px; color: #2c3e50; }
+        .guide-box p { font-size: 14px; color: #666; margin: 6px 0; }
+        .guide-box ol { padding-left: 20px; }
+        .guide-box ol li { font-size: 14px; color: #555; margin: 6px 0; list-style: decimal; }
+
+        /* FAQ */
+        .faq-item { border-bottom: 1px solid #f0ece6; padding: 16px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-q { font-weight: 600; font-size: 16px; color: #2c3e50; cursor: pointer; display: flex; align-items: center; }
+        .faq-q::before { content: 'Q.'; color: #b8860b; font-weight: 800; margin-right: 10px; }
+        .faq-a { color: #666; font-size: 14px; margin-top: 8px; padding-left: 32px; line-height: 1.8; }
+
+        /* 页脚 */
+        .site-footer { background: #1f1f1f; color: #888; margin-top: 30px; padding: 30px 0 20px; }
+        .footer-inner { max-width: 1200px; margin: 0 auto; padding: 0 16px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
+        .footer-copyright { text-align: center; width: 100%; font-size: 13px; padding-top: 20px; border-top: 1px solid #333; margin-top: 20px; }
+
+        /* 响应式 */
+        @media (max-width: 992px) {
+            .container { flex-direction: column; }
+            .side-content { width: 100%; }
+            .book-hero { flex-direction: column; align-items: center; text-align: center; }
+            .book-info { text-align: center; }
+            .book-meta { justify-content: center; }
+            .btn-group { justify-content: center; }
+        }
+        @media (max-width: 768px) {
+            .header-main { flex-direction: column; gap: 12px; }
+            .search-box { width: 100%; }
+            .search-box input { flex: 1; }
+            .nav-menu li a { padding: 10px 14px; font-size: 14px; }
+            .chapter-list { grid-template-columns: 1fr; }
+            .book-cover { width: 140px; height: 190px; }
+            .book-cover span { font-size: 32px; }
+            .section-title { font-size: 18px; }
+        }
+        @media (max-width: 480px) {
+            .section, .book-hero, .side-card { padding: 16px; }
+            .book-info h2 { font-size: 22px; }
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 顶栏 -->
+<div class="top-bar">
+    <div class="top-bar-inner">
+        <span>📖 花都小道士小说免费阅读 - 都市修仙经典</span>
+        <span><a href="#">手机版</a><a href="#">桌面版</a><a href="#">帮助中心</a></span>
+    </div>
+</div>
+
+<!-- 头部 -->
+<header class="site-header">
+    <div class="header-main">
+        <div class="logo">
+            <h1>花都<span>小道士</span></h1>
+            <p>都市修仙 · 热血奇遇 · 免费阅读</p>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="搜索小说、章节、作者...">
+            <button>搜索</button>
+        </div>
+    </div>
+</header>
+
+<!-- 导航 -->
+<nav class="nav-bar">
+    <ul class="nav-menu">
+        <li><a href="#" class="active">首页</a></li>
+        <li><a href="#">最新章节</a></li>
+        <li><a href="#">全部章节</a></li>
+        <li><a href="#">都市修仙</a></li>
+        <li><a href="#">道士流</a></li>
+        <li><a href="#">完本推荐</a></li>
+        <li><a href="#">阅读记录</a></li>
+    </ul>
+</nav>
+
+<!-- 主体 -->
+<div class="container">
+    <main class="main-content">
+        
+        <!-- 书籍主卡 -->
+        <div class="book-hero">
+            <div class="book-cover"><span>花都小道士</span></div>
+            <div class="book-info">
+                <h2>花都小道士</h2>
+                <div class="book-tags">
+                    <span class="tag hot">🔥 人气连载</span>
+                    <span class="tag">都市</span>
+                    <span class="tag">修仙</span>
+                    <span class="tag">道士下山</span>
+                    <span class="tag">热血</span>
+                </div>
+                <p class="book-desc">
+                    讲述一位从小在深山道观长大的年轻道士，奉师命下山入世修行的故事。他身怀玄门秘术，却对都市生活一窍不通。在繁华的花都中，他遭遇各种离奇事件，结识形形色色的人物，在红尘中历练道心，以一身道术斩妖除魔、惩恶扬善，从懵懂少年逐渐成长为真正的得道高人。故事融合传统道家文化与现代都市生活，情节跌宕起伏，轻松幽默又不乏深度。
+                </p>
+                <div class="book-meta">
+                    <i>📅 更新：今天 08:30</i>
+                    <i>📖 字数：约 156 万字</i>
+                    <i>🏷️ 状态：连载中</i>
+                    <i>👥 热度：★★★★★</i>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn-primary">📖 开始阅读</a>
+                    <a href="#" class="btn-outline">📚 全部章节</a>
+                    <a href="#" class="btn-outline">🔖 加入书架</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 最新章节 -->
+        <section class="section">
+            <div class="section-title">最新章节列表 <span>共 326 章 · 持续更新中</span></div>
+            <div class="chapter-list">
+                <div class="chapter-item"><a href="#">第326章 大道归真 <span class="time">08-20</span></a></div>
+                <div class="chapter-item"><a href="#">第325章 尘埃落定 <span class="time">08-19</span></a></div>
+                <div class="chapter-item"><a href="#">第324章 花都夜话 <span class="time">08-18</span></a></div>
+                <div class="chapter-item"><a href="#">第323章 玄门惊变 <span class="time">08-17</span></a></div>
+                <div class="chapter-item"><a href="#">第322章 暗流涌动 <span class="time">08-16</span></a></div>
+                <div class="chapter-item"><a href="#">第321章 一符定乾坤 <span class="time">08-15</span></a></div>
+                <div class="chapter-item"><a href="#">第320章 夜探古宅 <span class="time">08-14</span></a></div>
+                <div class="chapter-item"><a href="#">第319章 道心微澜 <span class="time">08-13</span></a></div>
+                <div class="chapter-item"><a href="#">第318章 灵符现世 <span class="time">08-12</span></a></div>
+                <div class="chapter-item"><a href="#">第317章 市井奇人 <span class="time">08-11</span></a></div>
+            </div>
+        </section>
+
+        <!-- 内容简介与看点 -->
+        <section class="section">
+            <div class="section-title">作品看点</div>
+            <div class="guide-box">
+                <h3>🌿 传统道术与现代都市的碰撞</h3>
+                <p>画符、捉鬼、风水堪舆、命理推算……这些在深山道观里学到的本事，到了高楼林立的都市中，会产生怎样的化学反应？主角用最传统的方式解决最现代的问题，妙趣横生。</p>
+            </div>
+            <br>
+            <div class="guide-box">
+                <h3>🔥 热血成长，从不谙世事到担当大任</h3>
+                <p>初入花都时，他是连红绿灯都不认识的小道士；历经重重磨难后，他成为守护一方的修行者。书中的每一次战斗、每一次抉择，都见证着主角的成长轨迹。</p>
+            </div>
+            <br>
+            <div class="guide-box">
+                <h3>😄 轻松幽默的日常与深厚的情感</h3>
+                <p>除了精彩的斗法情节，书中还描写了主角与房东、同事、朋友之间的有趣互动。时而让人捧腹，时而令人感动，阅读体验张弛有度。</p>
+            </div>
+        </section>
+
+        <!-- 热门章节推荐 -->
+        <section class="section">
+            <div class="section-title">读者最爱看的章节</div>
+            <div class="chapter-list">
+                <div class="chapter-item"><a href="#">第1章 下山入世 <span class="time">🔥 10万+阅读</span></a></div>
+                <div class="chapter-item"><a href="#">第15章 第一单生意 <span class="time">🔥 8万+阅读</span></a></div>
+                <div class="chapter-item"><a href="#">第42章 郊外古墓 <span class="time">🔥 7.5万+阅读</span></a></div>
+                <div class="chapter-item"><a href="#">第78章 都市除魔人 <span class="time">🔥 7万+阅读</span></a></div>
+                <div class="chapter-item"><a href="#">第103章 道法自然 <span class="time">🔥 6.8万+阅读</span></a></div>
+                <div class="chapter-item"><a href="#">第156章 巅峰对决 <span class="time">🔥 6.5万+阅读</span></a></div>
+            </div>
+        </section>
+
+        <!-- 阅读指南 -->
+        <section class="section">
+            <div class="section-title">免费阅读指南</div>
+            <div class="guide-box">
+                <h3>如何开始阅读《花都小道士》？</h3>
+                <ol>
+                    <li>点击上方"开始阅读"按钮，即可从第一章开始阅读。</li>
+                    <li>如果您是老读者，可直接在"最新章节列表"中点击最新章节继续阅读。</li>
+                    <li>点击"加入书架"后，下次访问可快速找到本书的阅读进度。</li>
+                    <li>本站所有章节均免费阅读，无弹窗广告干扰，支持移动端阅读。</li>
+                </ol>
+            </div>
+            <br>
+            <div class="guide-box">
+                <h3>阅读小贴士</h3>
+                <p>💡 建议开启浏览器夜间模式阅读，可有效缓解视觉疲劳。</p>
+                <p>💡 每日更新时间为上午 8:30 和下午 17:00，准时来看更新哦。</p>
+                <p>💡 部分早期章节正在精修中，如发现错别字可点击章节页"纠错"按钮反馈。</p>
+            </div>
+        </section>
+
+        <!-- 常见问题 -->
+        <section class="section">
+            <div class="section-title">常见问题解答</div>
+            <div class="faq-item">
+                <div class="faq-q">花都小道士小说还在连载吗？</div>
+                <div class="faq-a">目前本书仍在持续连载中，作者保持每日稳定更新。从作品热度来看，故事已进入后期高潮阶段，预计还有数十章篇幅完结，建议您收藏本页以便及时获取更新。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">花都小道士主要讲的是什么故事？</div>
+                <div class="faq-a">简单来说，这是一部"道士下山"类型的都市修仙小说。主角自幼在道观长大，通晓玄门法术，但因涉世未深，初入繁华都市时闹出不少笑话。随着剧情推进，他逐渐融入都市生活，同时运用道术解决各种灵异事件，与隐藏在城市中的修行者、妖邪势力周旋，最终在红尘中证得大道。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">这本书适合什么类型的读者？</div>
+                <div class="faq-a">如果您喜欢轻松幽默的叙事风格，同时对传统文化、道教法术、都市奇谈感兴趣，那么这本书非常适合您。它不像传统修仙文那样苦大仇深，而是充满生活气息和趣味性，阅读门槛较低，适合在通勤、午休等碎片时间阅读。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">网站是否真正完全免费？</div>
+                <div class="faq-a">是的，本站所有小说内容均免费提供在线阅读，无需注册，无需付费，也没有任何隐藏的订阅陷阱。我们通过页面中不影响阅读的少量广告维持网站运营，感谢您的理解与支持。</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 侧边栏 -->
+    <aside class="side-content">
+        <div class="side-card">
+            <div class="side-title">📊 阅读排行</div>
+            <ul class="rank-list">
+                <li><span class="rank-num top1">1</span><a href="#">花都小道士</a><span class="status">热读</span></li>
+                <li><span class="rank-num top2">2</span><a href="#">都市之天师归来</a><span class="status">热读</span></li>
+                <li><span class="rank-num top3">3</span><a href="#">我的师父是山神</a><span class="status">推荐</span></li>
+                <li><span class="rank-num">4</span><a href="#">超级小道士</a><span class="status">完本</span></li>
+                <li><span class="rank-num">5</span><a href="#">都市驱魔人</a><span class="status">热读</span></li>
+                <li><span class="rank-num">6</span><a href="#">玄门高手在都市</a><span class="status">完本</span></li>
+            </ul>
+        </div>
+
+        <div class="side-card">
+            <div class="side-title">🏷️ 热门标签</div>
+            <div class="style-tags">
+                <a href="#" class="style-tag">都市修仙</a>
+                <a href="#" class="style-tag">道士下山</a>
+                <a href="#" class="style-tag">轻松搞笑</a>
+                <a href="#" class="style-tag">热血战斗</a>
+                <a href="#" class="style-tag">灵异事件</a>
+                <a href="#" class="style-tag">玄学风水</a>
+                <a href="#" class="style-tag">升级流</a>
+                <a href="#" class="style-tag">扮猪吃虎</a>
+            </div>
+        </div>
+
+        <div class="side-card">
+            <div class="side-title">📌 阅读提醒</div>
+            <p style="font-size: 14px; color: #666; line-height: 1.8;">本站所有小说均为网络转载作品，版权归原作者所有。如果侵犯了您的合法权益，请及时联系我们，我们会在第一时间处理。</p>
+            <br>
+            <p style="font-size: 14px; color: #666; line-height: 1.8;">📱 建议使用 Chrome、Edge 或 Safari 浏览器访问本站，以获得最佳阅读体验。</p>
+        </div>
+
+        <div class="side-card">
+            <div class="side-title">📚 同类推荐</div>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+                <a href="#" style="background:#faf8f5; padding:12px; border-radius:8px; border-left:3px solid #b8860b; font-size:14px; color:#444; display:block;">《都市之最强小道士》<br><small style="color:#999;">完结 · 120万字</small></a>
+                <a href="#" style="background:#faf8f5; padding:12px; border-radius:8px; border-left:3px solid #b8860b; font-size:14px; color:#444; display:block;">《神相下山》<br><small style="color:#999;">连载 · 89万字</small></a>
+                <a href="#" style="background:#faf8f5; padding:12px; border-radius:8px; border-left:3px solid #b8860b; font-size:14px; color:#444; display:block;">《都市之阴阳先生》<br><small style="color:#999;">完结 · 200万字</small></a>
+            </div>
+        </div>
+    </aside>
+</div>
+
+<!-- 页脚 -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div>
+            <p style="font-size: 18px; color: #e8c877; font-weight: 700; margin-bottom: 6px;">花都小道士 · 免费阅读专题</p>
+            <p style="font-size: 14px;">每日稳定更新 | 清爽无弹窗 | 都市修仙经典作品</p>
+        </div>
+        <div>
+            <p style="font-size: 14px; margin-bottom: 4px;">免责声明：本站小说版权归原作者所有，仅供交流学习</p>
+            <p style="font-size: 14px;">如有版权问题，请联系我们删除相关内容</p>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p>© 2024 花都小道士小说免费阅读专题 · 请支持正版阅读</p>
+    </div>
+</footer>
+
+</body>
+</html>
